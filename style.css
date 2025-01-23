@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Outfit:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --clr-bright-orange: hsl(31, 77%, 52%);
+    --clr-dark-cyan: hsl(184, 100%, 22%);
+    --clr-very-dark-cyan: hsl(179, 100%, 13%);
+    --clr-white: hsla(0, 0%, 100%, 0.75);
+    --clr--very-light: hsl(0, 0%, 95%);
+    --fw-400: 400;
+    --fw-700: 700;
+    --ff-body: "Lexend Deca", serif;
+    --ff-heading: "Big Shoulders Display", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    background-color: var(--clr--very-light);
+    font-family: var(--ff-body);
+    font-weight: var(--fw-400);
+    color: var(--clr-white);
+}
+
+main {
+    align-items: center;
+    min-height: 100vh;
+}
+
+.cards-container {
+    width: 60rem;
+    border-radius: .4rem;
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin: 4rem 1rem;
+}
+
+.cards-container > * {
+    flex-basis: 100%;
+    flex: 1 0 18rem;
+}
+
+.cards-container > *:nth-child(1) {
+    background-color: var(--clr-bright-orange);
+}
+
+.cards-container > *:nth-child(2) {
+    background-color: var(--clr-dark-cyan);
+}
+
+.cards-container > *:nth-child(3) {
+    background-color: var(--clr-very-dark-cyan);
+}
+
+.card {
+    padding: 3rem;
+}
+
+img {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-family: var(--ff-heading);
+    font-weight: var(--fw-700);
+    text-transform: uppercase;
+    color: var(--clr--very-light);
+    margin-bottom: 2rem;
+}
+
+p {
+    line-height: 1.7;
+}
+
+button {
+    margin-top: 4rem;
+    padding: 0.5rem 2rem;
+    border-radius: 1.5rem;
+    border: none;
+    font: inherit;
+    border: 0.2rem solid var(--clr--very-light);
+    transition: background .3s ease;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 0.2rem solid var(--clr--very-light);
+    color: var(--clr--very-light);
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.attribution {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 4rem;
+    color: black;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
